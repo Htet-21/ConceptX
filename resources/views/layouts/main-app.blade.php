@@ -27,12 +27,12 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="brand-logo" href="{{ url('/') }}">
+                <a class="brand-logo" href="{{ url('https://conceptxmm.com/') }}">
                     <img src="{{ asset('images/paing-logo.jpg') }}" alt="Paing's Courses Logo">
                 </a>
-                <a id="lan-link" href="{{ url('/mm') }}">
+                <!-- <a id="lan-link" href="{{ url('/mm') }}">
                     <img src="{{ asset('images/mm-flag.png') }}" alt="Myanmar Flag">
-                </a>
+                </a> -->
             </div>
         </nav>
     </header>

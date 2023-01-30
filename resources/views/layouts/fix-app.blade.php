@@ -30,9 +30,9 @@
                 <a class="brand-logo" href="{{ url('/checkout') }}">
                     <img src="{{ asset('images/paing-logo.jpg') }}" alt="Paing's Courses Logo">
                 </a>
-                <a id="lan-link" href="{{ url('/checkout-mm') }}">
+                <!-- <a id="lan-link" href="{{ url('/checkout-mm') }}">
                     <img src="{{ asset('images/mm-flag.png') }}" alt="Myanmar Flag">
-                </a>
+                </a> -->
             </div>
         </nav>
     </header>

@@ -12,7 +12,7 @@ Paing's Courses | Payment Form
 
             <div class="container">
 
-                <h1 id="yttc-title">Paing's Courses</h1>
+                <h1 id="yttc-title">ConceptX</h1>
                 <br>
                 <div class="alert alert-danger">
                     <p>Your order was failed, you can try again <a href="{{ url('/') }}">here</a>.</p>

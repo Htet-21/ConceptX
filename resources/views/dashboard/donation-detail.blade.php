@@ -1,7 +1,7 @@
 @extends('layouts.admin-app')
 
 @section('title')
-Order Detail | Paing's Courses
+Order Detail | ConceptX
 @endsection
 
 @section('content')
@@ -11,9 +11,21 @@ Order Detail | Paing's Courses
     <div class="card">
       <div class="card-body">
 
-        <h1 style="text-align:left;" id="edit-license-type">Order and Payemnt Detail</h1>
+        <h1 style="text-align:left;" id="edit-license-type">Order and Payment Detail</h1>
 
         <p>Name: {{$donation_detail->customer_name}}</p>
+        <hr>
+
+        <p>Gender: {{$donation_detail->gender}}</p>
+        <hr>
+
+        <p>NRC: {{$donation_detail->nrc1}}</p>
+        <hr>
+
+        <p>Grade: {{$donation_detail->grade}}</p>
+        <hr>
+
+        <p>Address: {{$donation_detail->address}}</p>
         <hr>
 
         <p>Mail: {{$donation_detail->email}}</p>

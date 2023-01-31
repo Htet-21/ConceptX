@@ -32,43 +32,43 @@
 
                 <div class="form-group">
                     <label>Gender <span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill student's gender" name="customer_name" type="text" class="form-control" />
+                    <input placeholder="Fill student's gender" name="gender" type="text" class="form-control" />
                     <!-- Error -->
-                    @if ($errors->has('customer_name'))
+                    @if ($errors->has('gender'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('customer_name') }}
+                        {{ $errors->first('gender') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Date of Birth <span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill your date of birth" name="customer_name" type="text" class="form-control" />
+                    <input placeholder="Fill your date of birth" name="birth" type="text" class="form-control" />
                     <!-- Error -->
-                    @if ($errors->has('customer_name'))
+                    @if ($errors->has('birth'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('customer_name') }}
+                        {{ $errors->first('birth') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Are You CIS student?<span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <select id="payment-type" name="product_name" class="form-control">
-                        <option value="Financial Literacy 101">Yes</option>
-                        <option value="Selling Secrets Book">No</option>
+                    <select id="payment-type" name="cis" class="form-control">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
                     </select>
 
-                    @if ($errors->has('product_name'))
+                    @if ($errors->has('cis'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('product_name') }}
+                        {{ $errors->first('cis') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Student's previous grade (COVID-19 မဖြစ်ခင်ကာလတွင် ကျောင်းသားအောင်ခဲ့သောအတန်းကိုရွေးပေးရန်)<span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <select id="payment-type" name="product_name" class="form-control">
+                    <select id="payment-type" name="grade" class="form-control">
                         <option value="KG">KG(Pre-primary)</option>
                         <option value="Grade 1">Grade 1(Primary 1)</option>
                         <option value="Grade 2">Grade 2(Primary 2)</option>
@@ -83,9 +83,9 @@
                         <option value="Grade 11">Grade 11(‌သင်ရိုးဟောင်း ဆယ်တန်း)</option>
                     </select>
 
-                    @if ($errors->has('product_name'))
+                    @if ($errors->has('grade'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('product_name') }}
+                        {{ $errors->first('grade') }}
                     </div>
                     @endif
                 </div>
@@ -102,97 +102,97 @@
 
                 <div class="form-group">
                     <label>phone number<span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill your phone number" name="email" type="email" class="form-control" />
-                    @if ($errors->has('email'))
+                    <input placeholder="Fill your phone number" name="phone" class="form-control" />
+                    @if ($errors->has('phone'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('email') }}
+                        {{ $errors->first('phone') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Mother's name<span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill student's mother's name" name="email" type="email" class="form-control" />
-                    @if ($errors->has('customer_name'))
+                    <input placeholder="Fill student's mother's name" name="name1" class="form-control" />
+                    @if ($errors->has('name1'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('customer_name') }}
+                        {{ $errors->first('name1') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Mother's NRC <span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill student's mother's NRC" name="email" type="email" class="form-control" />
-                    @if ($errors->has('email'))
+                    <input placeholder="Fill student's mother's NRC" name="nrc1" class="form-control" />
+                    @if ($errors->has('nrc1'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('email') }}
+                        {{ $errors->first('nrc1') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Father's name<span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill student's father's name" name="email" type="email" class="form-control" />
-                    @if ($errors->has('email'))
+                    <input placeholder="Fill student's father's name" name="name2" class="form-control" />
+                    @if ($errors->has('name2'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('email') }}
+                        {{ $errors->first('name2') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Father's NRC <span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill student's father's NRC" name="email" type="email" class="form-control" />
-                    @if ($errors->has('email'))
+                    <input placeholder="Fill student's father's NRC" name="nrc2" class="form-control" />
+                    @if ($errors->has('nrc2'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('email') }}
+                        {{ $errors->first('nrc2') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Parents' occupation (မိဘအလုပ်အကိုင်) <span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill student's parents' occupation" name="email" type="email" class="form-control" />
-                    @if ($errors->has('email'))
+                    <input placeholder="Fill student's parents' occupation" name="occupation" class="form-control" />
+                    @if ($errors->has('occupation'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('email') }}
+                        {{ $errors->first('occupation') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>How many siblings does the student have? <br> (မွေးချင်းဘယ်နှစ်ယောက် ရှိသနည်း)</label>
-                    <input placeholder="Fill number of student's siblings" name="email" type="email" class="form-control" />
+                    <input placeholder="Fill number of student's siblings" name="sibling_num" class="form-control" />
                 </div>
 
                 <div class="form-group">
                     <label>Please write the name and age of the student's siblings. <br> (မွေးချင်းအမည် နှင့် အသက်)</label>
-                    <input placeholder="Fill name and age of the student's siblings." name="email" type="email" class="form-control" />
+                    <input placeholder="Fill name and age of the student's siblings." name="sibling" class="form-control" />
                 </div>
 
                 <div class="form-group">
                     <label>Student's guardian phone number <br> (အုပ်ထိန်းသူဖုန်းနံပါတ်) <span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill student's guardian phone number" name="email" type="email" class="form-control" />
-                    @if ($errors->has('email'))
+                    <input placeholder="Fill student's guardian phone number" name="guardian" class="form-control" />
+                    @if ($errors->has('guardian'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('email') }}
+                        {{ $errors->first('guardian') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Viber phone number <br> (အမြဲအသုံးပြုသော Viber ဖုန်းနံပါတ်ထည့်ပေးရန်) <span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill student's guardian phone number" name="email" type="email" class="form-control" />
-                    @if ($errors->has('email'))
+                    <input placeholder="Fill student's guardian phone number" name="viber" class="form-control" />
+                    @if ($errors->has('viber'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('email') }}
+                        {{ $errors->first('viber') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>States / Regions<span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <select id="payment-type" name="product_name" class="form-control">
+                    <select id="payment-type" name="states" class="form-control">
                         <option value="KG">Yangon</option>
                         <option value="Mandalay">Mandalay</option>
                         <option value="Ayeyarwaddy">Ayeyarwaddy</option>
@@ -209,19 +209,19 @@
                         <option value="Naypyidaw territory">Naypyidaw territory</option>
                     </select>
 
-                    @if ($errors->has('product_name'))
+                    @if ($errors->has('states'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('product_name') }}
+                        {{ $errors->first('states') }}
                     </div>
                     @endif
                 </div>
 
                 <div class="form-group">
                     <label>Address (အိမ်လိပ်စာထည့်ပေးရန်) <span style="color: red !important; display: inline; float: none;">*</span></label>
-                    <input placeholder="Fill address" name="email" type="email" class="form-control" />
-                    @if ($errors->has('email'))
+                    <input placeholder="Fill address" name="address" class="form-control" />
+                    @if ($errors->has('address'))
                     <div class="alert alert-danger">
-                        {{ $errors->first('email') }}
+                        {{ $errors->first('address') }}
                     </div>
                     @endif
                 </div>

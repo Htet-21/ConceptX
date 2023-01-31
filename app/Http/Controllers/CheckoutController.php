@@ -71,6 +71,7 @@ class CheckoutController extends Controller
         $name = $request->input('customer_name');
         $product_name = $request->input('product_name');
         $amount = $request->input('amount');
+        $gender = $request->input('gender');
         $currency = $request->input('currency');
         $quantity = 1;
         $total = $amount * $quantity;
